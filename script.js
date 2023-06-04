@@ -3,11 +3,11 @@ document.getElementById("radio1").checked = true;
 
 setInterval(function(){
     nextImage();
-}, 5000)
+}, 8000)
 
 function nextImage(){
     count++;
-    if(count>7){
+    if(count>6){
         count = 1;
     }
 
