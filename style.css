@@ -73,12 +73,6 @@ header ul li:hover a{
     border-top-right-radius: 25vw;
     border-top-left-radius: 25vw;
 } */
-
-/* novo home */
-
-
-  /* --- */
-
   
 #home .content{
     position: relative;
@@ -438,7 +432,8 @@ header ul li:hover a{
     display: flex;
     /* grid-template-columns: repeat(4,1fr);
     grid-gap: 20px; */
-    margin: 40px 0;justify-content: center;
+    margin: 40px 0;
+    justify-content: center;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -485,4 +480,195 @@ header ul li:hover a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+/* resposive */
+@media(max-width: 650px){
+
+    /* #home{
+        width: 175%;
+    } */
+
+    #home .content h2{
+        font-size: 3em;
+    }
+
+    #home::before{
+        width: 80vw;
+        height: 40vw;
+        border-top-right-radius: 80vw;
+        border-top-left-radius: 80vw;
+    }
+
+    #home .logo-principal{
+        position: absolute;
+        height: 40vh;
+        left: 125px;
+    }
+
+    .secText h2{
+        font-size: 1.5em;
+    }
+
+    /* participantes */
+    #participantes .content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* sobre */
+
+    .secundario{
+        display: grid;
+        grid-template-columns: 20% 30%;
+        align-items: center;
+        margin: 0 15em;
+    }
+
+    #sobre .container_img{
+        width: 80%;
+    }
+
+    #sobre .container_descricao{
+        padding: 1em;
+    }
+
+    #sobre .descricao_titulo{
+        font-weight: 700;
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 0.1rem;
+    }
+
+    #sobre .descricao_texto{
+        font-size: 10px;
+        color: #fff;
+    }
+
+    .btn{
+        background-color: #FF9C00;
+        border-radius: 2px;
+        padding: 0.5em;
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        margin-bottom: 0.5em;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn_cv{
+        background-color: transparent;
+        border: 1px solid #fff;
+    }
+
+    .slider {
+        height: 18rem;
+        width: 35rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        position: absolute;
+        top: 60%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+
+    .manual-navigation{
+        bottom: 0.8rem;
+    }
+
+    .manual-btn{
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+
+    /* skills */
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: 100px;
+        grid-gap: 10px;
+        background-color: #04273A;
+    }
+
+    /* agradecimentos */
+    #agradecimentos .content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 40px 0;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+      
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 30px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .menuToggle::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #d38507;
+        transform: translateY(-10px);
+        transition: 0.5s;
+        box-shadow: 0 10px #d38507;
+    }
+
+    .menuToggle::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #d38507;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header.active .menuToggle::before{
+        transform: translateY(0px) rotate(45deg);
+        box-shadow: 0 0 #d38507;
+    }
+
+    header.active .menuToggle::after{
+        transform: translateY(0px) rotate(315deg);
+    }
+
+    header ul{
+        display: none;
+    }
+
+    header.active ul{
+        position: fixed;
+        left: 0;
+        top: 77px;
+        width: 100%;
+        height: calc(100vh - 77px);
+        display: flex;
+        background: rgba(50, 50, 50, 0.95);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 10000;
+        gap: 20px;
+    }
+
+    header.active ul li a {
+        font-size: 2em;
+    }
+
 }
