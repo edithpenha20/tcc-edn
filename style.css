@@ -110,7 +110,7 @@ header ul li:hover a{
     position: relative;
     background: #04273A;
     min-height: 100vh;
-    padding: 120px 10px;
+    padding: 120px 0;
 }
 
 .secText{
@@ -585,10 +585,11 @@ header ul li:hover a{
     /* skills */
     .skills {
         display: grid;
-        grid-template-columns: repeat(3, 150px);
+        grid-template-columns: repeat(3, 125px);
         grid-template-rows: 100px;
-        grid-gap: 10px;
+        grid-gap: 3px;
         background-color: #04273A;
+        justify-items: center;
     }
 
     /* agradecimentos */
