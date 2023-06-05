@@ -412,12 +412,25 @@ header ul li:hover a{
 }
 
 /* Skills */
-.skills {
+/* .skills {
     display: grid;
     grid-template-columns: repeat(5, 225px);
     grid-template-rows: 100px;
     grid-gap: 10px;
     background-color: #04273A;
+} */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 100vh;
+}
+
+.skills img{
+    margin: 10px;
+    max-width: 23vw;
 }
   
 .box {
@@ -583,14 +596,14 @@ header ul li:hover a{
 
 
     /* skills */
-    .skills {
+    /* .skills {
         display: grid;
         grid-template-columns: repeat(3, 125px);
         grid-template-rows: 100px;
         grid-gap: 3px;
         background-color: #04273A;
         justify-items: center;
-    }
+    } */
 
     /* agradecimentos */
     #agradecimentos .content{
