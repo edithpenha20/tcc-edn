@@ -110,7 +110,7 @@ header ul li:hover a{
     position: relative;
     background: #04273A;
     min-height: 100vh;
-    padding: 120px 100px;
+    /* padding: 120px 100px; */
 }
 
 .secText{
