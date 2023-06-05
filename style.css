@@ -485,9 +485,9 @@ header ul li:hover a{
 /* resposive */
 @media(max-width: 650px){
 
-    /* #home{
-        width: 175%;
-    } */
+    #home{
+        padding: 60px;
+    }
 
     #home .content h2{
         font-size: 3em;
@@ -503,7 +503,7 @@ header ul li:hover a{
     #home .logo-principal{
         position: absolute;
         height: 40vh;
-        left: 125px;
+        left: 75px;
     }
 
     .secText h2{
@@ -568,7 +568,7 @@ header ul li:hover a{
         overflow: hidden;
         position: absolute;
         top: 60%;
-        left: 30%;
+        left: 20%;
         transform: translate(-50%, -50%);
     }
 
